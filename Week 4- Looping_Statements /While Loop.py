@@ -403,7 +403,7 @@ print(d)
 
 
 
-39.Wap to print python for 5 times.
+#39.Wap to print python for 5 times.
 s='python'
 i=0
 while i<5:
@@ -411,36 +411,25 @@ while i<5:
     i+=1
 
 
-40.Wap to print n natural numbers.
+#40.Wap to print n natural numbers.
 n=int(input("enter range--"))
 i=1
 while i<=n:
     print(i,end=' ')
     i+=1
-enter range--10
-1 2 3 4 5 6 7 8 9 10 
 
 
-41.Wap to print multiplication table for n.
+
+#41.Wap to print multiplication table for n.
 n=int(input("enter number--"))
 i=1
 while i<=10:
     print(f'{n}*{i} = {n*i}')
     i+=1
-enter number--2
-2*1 = 2
-2*2 = 4
-2*3 = 6
-2*4 = 8
-2*5 = 10
-2*6 = 12
-2*7 = 14
-2*8 = 16
-2*9 = 18
-2*10 = 20
 
 
-42.Wap to find the sum of n natural numbers.
+
+#42.Wap to find the sum of n natural numbers.
 n=int(input("enter number--"))
 sum=0
 i=0
@@ -448,11 +437,9 @@ while i<=n:
     sum=sum+i
     i+=1
 print(sum)
-enter number--10
-55
 
 
-43. Wap to find the product of n natural numbers or factorial of a number.
+#43. Wap to find the product of n natural numbers or factorial of a number.
 n=int(input("enter number--"))
 fact=1
 i=1
@@ -462,7 +449,7 @@ while i<=n:
 print(fact)
 
 
-4.Wap to print all the characters of a string.
+#4.Wap to print all the characters of a string.
 s=input("enter string--")
 i=0
 while i<len(s):
@@ -470,7 +457,7 @@ while i<len(s):
     i+=1
 
 
-45.Wap to print all the characters present at even index of a string.
+#45.Wap to print all the characters present at even index of a string.
 s=input("enter sting --")
 i=0
 while i<len(s):
@@ -479,7 +466,7 @@ while i<len(s):
         i+=1
 
 
-46.Wap to extract all the lowercase characters present in a string.
+#46.Wap to extract all the lowercase characters present in a string.
 s=input("enter String --")
 i=0
 while i<len(s):
@@ -488,7 +475,7 @@ while i<len(s):
     i+=1
 
 
-47.Wap to extract all the vowels present in a string.
+#47.Wap to extract all the vowels present in a string.
 s=input("enter string --")
 i=0
 while i<len(s):
@@ -497,7 +484,7 @@ while i<len(s):
     i+=1
 
 
-48.Wap to print factors of a integer number.
+#48.Wap to print factors of a integer number.
 n=int(input("enter number--"))
 i=1
 factors=[]
@@ -508,7 +495,7 @@ while i<=n:
 print(factors)
 
 
-49.Wap to toggle a string.
+#49.Wap to toggle a string.
 s=input("enter string --")
 i=0
 togl=''
@@ -520,7 +507,7 @@ enter string --AbCd
 aBcD
 
 
-50.Wap to reverse the given number.
+#50.Wap to reverse the given number.
 n=int(input("enter number--"))
 i=0
 rev=[]
@@ -532,7 +519,7 @@ while n>0:
 print(rev)
 
 
-51.Wap to find the sum of individual digits of a number.
+#51.Wap to find the sum of individual digits of a number.
 n=int(input("enter number--"))
 sum=0
 i=0
@@ -544,7 +531,7 @@ while n>0:
 print(sum)
 
 
-52. Wap to check whether the number is perfect or not.
+#52. Wap to check whether the number is perfect or not.
 n=int(input("enter number--"))
 res=0
 i=1
@@ -558,7 +545,7 @@ else:
     print(n,'is  not a perfect number..',res)
 
 
-53.Wap to login to phonepe by entering correct otp.
+#53.Wap to login to phonepe by entering correct otp.
 login_id='abc123'
 opt={1234}
 li=input("enter login id --")
@@ -568,7 +555,7 @@ if li==login_id:
         print()
 
 
-55.Wap to extaract all the even integers present in a tuple at odd index.
+#55.Wap to extaract all the even integers present in a tuple at odd index.
 t=eval(input("enter tuple elements--"))
 i=0
 while i<len(t):
@@ -577,7 +564,7 @@ while i<len(t):
     i+=1
 
 
-56.Wap to remove duplicates from a list without converting into set.
+#56.Wap to remove duplicates from a list without converting into set.
 l=eval(input("enter list--"))
 i=0
 while i<len(l):
@@ -592,7 +579,7 @@ enter list--[1,4,2,3,1,2,3]
 [1, 4, 2, 3]
 
 
-57.Wap to find the sum of all the odd numbers between the given range.
+#57.Wap to find the sum of all the odd numbers between the given range.
 n=int(input("enter range--"))
 i=0
 sum=0
@@ -603,7 +590,7 @@ while i<=n:
 print(sum)
 
 
-58.Wap to find the greatest number in a given list of integers.
+#58.Wap to find the greatest number in a given list of integers.
 l=[1,45,70,23,9]
 i=0
 while i<len(l):
@@ -619,7 +606,7 @@ print(l)
 [70]
 
 
-59.Wap to find the sum of cube of a number in a string.
+#59.Wap to find the sum of cube of a number in a string.
 s='abc2r3'
 i=0
 sum=0
@@ -630,7 +617,7 @@ while i<len(s):
 print(sum)
 
 
-60.Wap to check whether the number is Armstrong or not. 
+#60.Wap to check whether the number is Armstrong or not. 
 n=int(input("enter number--"))
 a=n
 sum=0
@@ -646,7 +633,7 @@ else:
     print(f'{a} is not a armstrong number')
 
 
-62.Wap to check the given number is prime or not.
+#62.Wap to check the given number is prime or not.
 n=int(input('enter number'))
 count=0
 i=1
@@ -660,7 +647,7 @@ else:
     print(n,'is  not a composite number..')
 
 
-63.Wap to check whether the number is palindrome or not.
+#63.Wap to check whether the number is palindrome or not.
 a=1221
 b=a
 temp=0
@@ -676,7 +663,7 @@ else:
     print(b,' is not a palindrome number')
 
 
-64.Wap to find the HCF of two numbers.
+#64.Wap to find the HCF of two numbers.
 i=1
 n=12
 m=14
@@ -689,7 +676,7 @@ fact.sort()
 print(fact[-1])
 
 
-67.Wap to count the number of words in a string.
+#67.Wap to count the number of words in a string.
 a='qwert'
 count=0
 i=0
@@ -699,7 +686,7 @@ while i<len(a):
 print(count)
 
 
-68.Wap to guess the number.
+#68.Wap to guess the number.
 a=123
 if len(str(a))==1:
     i=0
@@ -723,7 +710,7 @@ else:
     print("length is more than 3 digits")
 
 
-69.Wap to find the common elements in two sets
+#69.Wap to find the common elements in two sets
 s1={1,2,7,4,5}
 s2={9,7,8,6,5,1,1}
 l1=list(s1)
@@ -740,7 +727,7 @@ while i<len(l1):
 print(comm)
 
 
-70.Wap to find the product of all the digits present in a number.....give the out out in while loop program 
+#70.Wap to find the product of all the digits present in a number.....give the out out in while loop program 
 n=123
 pdt=1
 ld=0
@@ -751,7 +738,7 @@ while n>0:
 print(pdt)
 
 
-71 reverse only vowels from string(Icecream)
+#71 reverse only vowels from string(Icecream)
 a='icecream'
 l_a=list(a)
 i=0
@@ -769,8 +756,175 @@ while j<len(l_a):
     j+=1
 res=''
 i=0
-while i<len(l_a):
-    if l_a[i].isalpha:
-        res=res+l_a[i]
+
+
+# 72.Wap to extract all the string values present in list only if the string is palindrome.
+l=[1,2,3,'abc',3,2,1]
+temp=[]
+i=0
+while i<len(l):
+    temp=[l[i]]+temp
     i+=1
-print(res)
+if l==temp:
+    i=0
+    while i<len(l):
+        if isinstance(l[i],str):
+            print(l[i])
+        i+=1
+
+
+# 73.Wap to return the positions of vowels present in the given string.
+s='abceibd'
+i=0
+while i<len(s):
+    if s[i] in 'AEIOUaeiou':
+        print(i,end=' ')
+    i+=1
+
+
+# 74.Wap to check whether the given collection is having nested collection or not.
+coll=[1,2,3,9,(4,5),6]
+i=0
+while i<len(coll):
+    if not(isinstance(coll[i],(int,float,complex,bool))):
+        print("list contains nested collection")
+        print(coll)
+    i+=1
+
+
+# 75.Wap to count the number of words in a string.
+s=input("enter string--")
+count=0
+i=0
+while i<len(s):
+    count+=1
+    i+=1
+print(count)
+
+
+# 76.Wap to check whether the number is neon number or not.
+# N=9→9**2=81→8+1=9
+n=int(input("enter number--"))
+pow=n**2
+sum=0
+while pow>0:
+    ld=pow%10
+    sum=sum+ld
+    pow=pow//10
+if sum==n:
+    print(n,' is a neon number')
+else:
+    print(n,' is not a neon number')
+
+
+#77.Wap to find the longest word in a string.
+s=input("enter string --")
+st=s.split()
+i=0
+max=''
+i=0
+while i<len(st):
+    if len(s[i])>len(max):
+        max=s[i]
+    i+=1
+print(max)
+
+
+#78.Wap to replace the special character present in a string by space.
+s='as$df%h'
+i=0
+out=''
+while i<len(s):
+    if not(s[i].isalnum()):
+        out=out+' '
+    else:
+        out=out+s[i]
+    i+=1
+print(out)
+
+
+#79.wap to print the square of all the integers present in a list.
+l=[1,'a',4]
+i=0
+while i<len(l):
+    if type(l[i])==int:
+        print(l[i]**2,end=' ')
+    i+=1
+
+
+#80.Wap to extract all the odd number present at even index from a list.
+l=[1,2,3,4]
+i=0
+while i<len(l):
+    if l[i]%2==1:
+        print(l[i],end=' ')
+    i+=2
+
+for i,j in enumerate(l):
+    if i%2==0 and j%2==1:
+        print(j,end=' ')
+
+
+
+#81.Wap to extract all the mutable values present in a tuple.
+t=(1,2,[12,34],{2,3},4)
+i=0
+while i<len(t):
+    if isinstance(t[i],(list,set,dict)):
+        print(t[i])
+    i+=1
+
+
+#82.Wap to get the following output.
+ In=’10100011231’
+ Out=’010111000’ ( 0→1 and 1→0 if it is other than 0 &1 ignore)
+n='10100011231'
+i=0
+out=''
+while i<len(n):
+    if n[i]=='0':
+        out+='1'
+    elif n[i]=='1':
+        out+='0'
+    else:
+        out+=''
+    i+=1
+print(out)
+
+
+
+#83.Wap to get the following output.
+ In=’abacbaacc’
+ Out={‘a’:4,’b’:2,’c’:3}
+s='abacbaacc'
+count=0
+d={}
+i=0
+while i<len(s):
+    j=0
+    while j<len(s):
+        if s[j]==s[i]:
+            count+=1
+        j+=1
+    d.update({s[i]:count})
+    count=0
+    i+=1
+print(d)
+
+
+# 84.Wap to get the following output.
+#  In=’127342’
+#  Out=’242173’ (extract even and odd digits separately and concatenate both)
+n='127342'
+e=''
+o=''
+i=0
+while i<len(n):
+    if int(n[i])%2==0:
+        e+=n[i]
+    else:
+        o+=n[i]
+    i+=1
+print(e+o)
+
+
