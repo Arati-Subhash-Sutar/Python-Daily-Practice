@@ -928,3 +928,332 @@ while i<len(n):
 print(e+o)
 
 
+# 85.Write a program to extract all the individual data items of a list if the length of extracted 
+# output is more than 4 print the first value of the output else print last value of the output list and add 10 to it
+l=[1,'fg',3,5.6,'abc',False,(1,2,3)]
+i=0
+indv=[]
+count=0
+while i<len(l):
+    if isinstance(l[i],(int,float,bool,complex)):
+        count+=1
+        indv+=[l[i]]
+    i+=1
+print(indv)
+if count>4:
+    print(indv[0])
+else:
+    print(indv[-1])
+    indv+=[10]
+    print(indv)
+
+[1, 3, 5.6, False]
+False
+[1, 3, 5.6, False, 10]
+
+
+
+#86.Write a program to get the following output
+ # input1=’11001010’
+ # input2=’01110010’
+ # output=4(to count how many positions are having same value)
+a='11001010'
+b='01110010'
+i=0
+count=0
+while i<len(a):
+    if a[i]==b[i]:
+        count+=1
+    i+=1
+print(count)
+
+4
+
+
+
+# Q87..Write a program to get the following output
+#  input=[1,2,3,4,5,6]
+#  value=3
+#  output=[1,2,3][4,5,6]
+#  If value=2
+#  output=[1,2][3,4][5,6]
+a=[1,2,3,4,5,6]
+b=int(input("enter num"))
+out=[]
+i=0
+while i<len(a):
+    sublist=[]
+    j=0
+    while j<b and i<len(a):
+        sublist.append(a[i])
+        i+=1
+        j+=1
+    out.append(sublist)
+print(out)
+
+
+
+#Q88..Write a program to check weather the given number is spy number or not 
+i.e, 1*2*3=1+2+3
+n=123
+prd=1
+sum=0
+ld=0
+while n>0:
+    ld=n%10
+    prd=prd*ld
+    sum=sum+ld
+    n=n//10
+if sum==prd:
+    print('spy number')
+else:
+    print('not a spy numbetr')
+
+
+#Q89.Write a program to check weather the given number is Xylem number or 
+not i.e, 1234 → 1+4=2+3
+n=1234
+ld=n%10
+temp=n//10
+fd=0
+mid=0
+while temp>9:
+    d=temp%10
+    mid=mid+d
+    temp=temp//10
+if (temp+ld)==mid:
+    print('Xylem')
+else:
+    print("not xylem")
+
+
+# 90.Write a program to check weather the given number is phloem number or  not
+# I.e, 12345→ 1+5!=2+3+4
+n=12345
+l_d=n%10
+temp=n//10
+sum_middle=0
+while temp>9:
+    digit=temp%10
+    sum_middle+=digit
+    temp//=10
+first_digit=temp
+if first_digit+l_d!=sum_middle:
+    print('its a pholem number')
+else:
+    print('its not a pholem number')
+
+
+#91.Write a program to check weather the given number is neon number or not
+i.e. 9 is number, 9**2=81→8+1=9
+n=9
+prd=n**2
+ld=0
+sum=0
+while prd>0:
+    ld=prd%10
+    sum+=ld
+    prd=prd//10
+if n==sum:
+    print(n,' is neon number')
+else:
+    print(n,' is neon number')
+9  is neon number
+
+
+# 92.Write a program to check weather the given number is automorphic or not
+# I.e.5 is number 5**2=25 last digit of 25 is the number itself
+n=int(input('enter the number:'))
+sqr=n**2
+div=1
+temp=n
+while n>0:
+    div=div*10
+    n=n//10
+if sqr%div==temp:
+    print('automorphic')
+else:
+    print('not automorphic')
+
+
+# Q93. Write a program to return the positions of vowels present in the given string
+s='abceibd'
+i=0
+while i<len(s):
+    if s[i] in "AEIOUaeiou":
+        print(i,end=' ')
+    i+=1
+
+#Q94.Write a program to whether the entered username and password is correct or not if not correct print enter again
+username='abc'
+password='123'
+
+uname=input("enter username--")
+pas=input("enter password--")
+
+while username!=uname or password!=pas:
+    print("enter correct detailes ")
+    uname=input("enter username--")
+    pas=input("enter password--")
+print('login successful')
+
+
+
+# Q95.Write a program to extract all integer data items from tuple
+t=(91,'fdg',4.5,False,5)
+i=0
+out=tuple()
+while i<len(t):
+    if type(t[i])==int:
+        out+=(t[i],)
+    i+=1
+print(out)
+
+
+# Q96.Write a program to extract all the non default values from the list
+l=[1,0,False,5.6,'abc']
+# print(type(l[0])())
+i=0
+nd=[]
+while i<len(l):
+    if l[i]!=type(l[0])():
+        nd+=[l[i]]
+    i+=1
+print(nd)
+
+
+# Q97.Write a program to get the following output -
+# Input='hai hello how are you'
+# output='hai**hello**how**are**you'
+s='hai hello how are you'
+i=0
+a=''
+while i<len(s):
+    if not(s[i].isalnum()):
+        a+='**'
+    else:
+        a+=s[i]
+    i+=1
+print(a)
+
+
+
+# Q98.Write a program to reverse the given list
+l=[1,2,3,4]
+i=0
+rev=[]
+while i<len(l):
+    rev=[l[i]]+rev
+    i+=1
+print(rev)
+
+
+
+#99.Write a program to count number of words in the given string
+s=input('enter the str:')
+a=s.split()
+i=0
+count=0
+while i<len(a):
+    count+=1
+    i+=1
+print(count)
+
+
+# Q100.Write a program to print ‘Thank you’ for n times 
+n=int(input("enter range--"))
+i=0
+while i<n:
+    print('Thank you')
+    i+=1
+
+
+
+ 
+#101.Write a program to find the length of the longest word
+s='hii hello asbc'
+st=s.split()
+long=' '
+i=0
+while i<len(st):
+    if len(st[i])>len(long):
+        long=st[i]
+    i+=1
+print(long) 
+hello
+
+
+#102.Write a program to count number of consonants in the given string
+s=input('enter the str:')
+i=0
+count=0
+while i<len(s):
+    if not(s[i] in 'AEIOUaeiou'):
+        count+=1
+    i+=1
+print(count)
+
+
+#103.Wap extract upper, lower, digit and special characters present in a string to different output variable
+s='aBCd1234@#$'
+dig=''
+spe=''
+upp=''
+low=''
+i=0
+while i<len(s):
+    if s[i].isalpha():
+        if 'A'<=s[i]<='Z':
+            upp+=s[i]
+        else:
+            low+=s[i]
+    elif s[i].isdigit():
+        dig+=s[i]
+    else:
+        spe+=s[i]
+    i+=1
+print('Upper= ',upp)
+print('Lower= ',low)
+print('Digit= ',dig)
+print('Special= ',spe)
+
+
+# 104. Wap to get the following output.
+#  S=’hai hello ‘
+#  Out={‘hai’:’ai’,’hello:’eo’}
+s='hai hello'
+a=s.split()
+i=0
+d={}
+while i<len(a):
+    j=0
+    vow=''
+    while j>len(a[i]):
+        if a[j] in 'AEIOUaeiou':
+            vow=vow+a[j]
+        j+=1
+    d.update({a[i]:vow})
+    vow=''
+    i+=1
+print(d)
+
+
+# 105.Write a program to check weather the given collection is having nested collection or not
+l=[1,2,(3,4),5,'asb',51]
+i=0
+while i<len(l):
+    if not(isinstance(l[i],(int,float,bool,complex))):
+        print("collection is having nested collection")
+    i+=1
+
+
+
+
+
+
+
+
+
+
+
+
