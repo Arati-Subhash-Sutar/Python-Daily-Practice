@@ -393,6 +393,192 @@ for i in l:
 print(rev)
 
 
+# 43.Wap to return the positions of vowels present in the given string.
+s='abceibd'
+for i,j in enumerate(s):
+    if j in 'AEIOUaeiou':
+        print(i,end=' ')
+print()
+
+
+# 44.Wap to check whether the given collection is having nested collection or not.
+coll=[1,2,3,9,(4,5),6]
+for i in coll:
+    if not(isinstance(i,(int,float,complex,bool))):
+        print("list contains nested collection")
+        print(coll)
+
+
+# 45.Wap to count the number of words in a string.
+s=input("enter string--")
+count=0
+for i in s:
+    count+=1
+print(count)
+
+
+# 46.Wap to check whether the number is neon number or not.
+# N=9→9**2=81→8+1=9
+n=int(input("enter number--"))
+pow=n**2
+sum=0
+temp=pow
+dig=0
+while temp>0:
+    dig+=1
+    temp=temp//10
+temp=pow
+for i in range(dig):
+    ld=pow%10
+    sum=sum+ld
+    pow=pow//10
+if sum==n:
+    print(n,' is a neon number')
+else:
+    print(n,' is not a neon number')
+
+
+
+#47 .Wap to find the longest word in a string.
+s=input("enter string --")
+st=s.split()
+i=0
+max=''
+for i in st:
+    if len(i)>len(max):
+        max=i
+print(max)
+
+
+#48.Wap to replace the special character present in a string by space.
+s='as$df%h'
+out=''
+for i in s:
+    if not(i.isalnum()):
+        out+=' '
+    else:
+        out+=i
+print(out)
+
+
+#49.wap to print the square of all the integers present in a list.
+l=[1,'a',4]
+for i in l:
+    if type(i)==int:
+        print(i**2,end=' ')
+
+
+#50.Wap to extract all the odd number present at even index from a list.
+l=[1,2,3,4]
+for i,j in enumerate(l):
+    if i%2==0 and j%2==1:
+        print(j,end=' ')
+
+
+
+#51.Wap to extract all the mutable values present in a tuple.
+t=(1,2,[12,34],{2,3},4)
+for i in t:
+    if isinstance(i,(list,set,dict)):
+        print(i)
+
+
+#52.Wap to get the following output.
+ # In=’abacbaacc’
+ # Out={‘a’:4,’b’:2,’c’:3}
+s='abacbaacc'
+count=0
+d={}
+for i in s:
+    for j in s:
+        if j==i:
+            count+=1
+    d.update({i:count})
+    count=0
+print(d)
+
+
+# 53.Wap to get the following output.
+#  In=’127342’
+#  Out=’242173’ (extract even and odd digits separately and concatenate both)
+n='127342'
+e=''
+o=''
+for i in n:
+    if int(n[i])%2==0:
+        e+=n[i]
+    else:
+        o+=n[i]
+print(e+o)
+
+
+#54. Wap to get the following output.
+# S=’hai hello'
+# Out={‘hai’:’ai’,’hello:’eo’}
+s='hai hello'
+s1=s.split()
+d={}
+for i in s1:
+    j=0
+    vwl=''
+    while j<len(i):
+        if i[j] in 'AEIOUaeiou':
+            vwl=vwl+i[j]
+        j+=1
+    d.update({i:vwl})
+    vwl=''  
+print(d)
+
+
+#55. Wap to get the following output.
+ S=[‘http://jiocinema.com’,’http://file.py’,’web.html’,’http://amazom.com’,’http://www.org’]
+ Out=[‘com’,’py’,’html’,’org’]
+s=['http://jiocinema.com','http://file.py','web.html','http://amazom.com','http://www.org']
+out=[]
+for i in s:
+    spl=i.split('.')
+    out=out+[spl[-1]]
+print(out)
+
+
+#56. Wap to get the following output.
+ # S=[‘http://jiocinema.com’,’http://file.py’,’web.html’,’http://amazom.com’,’http://www.org ’http://python.py’]
+ # Out={‘com’:[‘jiocinema’,’amazon’],’py’:[‘file’,’python’],’html’:[‘web’],’org’:[‘www’]}
+s=['http://jiocinema.com','http://file.py','web.html','http://amazom.com','http://www.org','http://python.py']
+spl=[]
+d={}
+for i in s:
+    spl+=i.split('.')
+    d
+print(d)
+
+
+
+#57.Wap to get the following output.
+ # L=[‘hai’,34,3.4,’hello’,90,’byebye’]
+ # Out={‘hai’:’hi’,’hello’:’ho’,’byebye’:’be’}
+l=['hai',34,3.4,'hello',90,'byebye']
+d={}
+for i in l:
+    if type(i)==str:
+        st=i[0]+i[-1]
+        d.update({i:st})
+print(d)
+
+
+#58.wap to get the following output.
+ In=’hello’
+ Out={0:’h’,1:’e’,2:’l’,3:’l’,4:’e’}
+n='hello'
+d={}
+for i,j in enumerate(n):
+    d.update({i:j})
+print(d)
+
+
+
+
+
 
 
 
