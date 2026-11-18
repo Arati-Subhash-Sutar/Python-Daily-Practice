@@ -77,3 +77,110 @@ from functools import reduce
 numbers =[1,2,3,4]
 product=reduce(lambda x,y : x*y,numbers)
 print(product)
+
+
+print(" Lambda with Comprehensions")
+
+
+
+# 16. Using lambda with list comprehension, create a list of squares for all numbers in a given list
+num=[1,2,3,4]
+sqr=lambda x:x**2
+num_sqr=[sqr(n) for n in num]
+print(num_sqr)
+
+
+# 17. Using lambda with list comprehension, extract all even numbers from a list
+lst=[1,2,3,4,5,6]
+even=[n for n in lst if (lambda x:x%2==0)(n)]
+print(even)
+
+
+# 18. Using lambda with list comprehension, extract all odd numbers from a list
+lst=[1,2,3,4,5,6]
+odd=[n for n in lst if (lambda x:x%2!=0)(n)]
+print(odd)
+
+
+# 19. Using lambda with list comprehension, create a list containing the cubes of numbers from a given list
+lst=[1,2,3,4,5,6]
+cube=lambda x:x**3
+num_cube=[cube(n) for n in lst]
+print(num_cube)
+
+
+# 20. Using lambda with list comprehension, extract words having more than 5 characters
+lst=['hii','hello','hiiwords','hellowords']
+wrd_len=[wrd for wrd in lst if (lambda x:len(x)>5)(wrd)]
+print(wrd_len)
+
+
+# 21. Using lambda with list comprehension, convert all words in a list into uppercase.
+lst=['hii','hello','hiiwords','hellowords']
+wrd_upr=[(lambda x: x.upper())(wrd) for wrd in lst]
+print(wrd_upr)
+
+
+# 22. Using lambda with list comprehension, create a list containing the lengths of all words.
+lst=['hii','hello','hiiwords','hellowords']
+len_wrd=[(lambda x: len(x))(wrd) for wrd in lst]
+print(len_wrd)
+
+
+# l23. Using lambda with dictionary comprehension, create a dictionary of numbers and their squares.
+numbers=[1,2,3,4,5]
+sqr=lambda x:x**2
+dict_sqr={num:sqr(num) for num in numbers}
+print(dict_sqr)
+
+
+# l24. Using lambda with dictionary comprehension, create a dictionary of words and their lengths.
+lst=['hii','hello','hiiwords','hellowords']
+leng=lambda x: len(x)
+len_wrd={wrd:leng(wrd) for wrd in lst}
+print(len_wrd)
+
+
+# l25. Using lambda with list comprehension, extract numbers greater than 50 from a list.
+lst=[13,56,34,78,65,42,50,79,90]
+grt_num=[n for n in lst if (lambda x:x>50)(n)]
+print(grt_num)
+
+
+# l26. Using lambda with list comprehension, create a list of numbers divisible by 7 from 1 to 100
+div_svn=[n for n in range(1,100) if (lambda x:x%7==0)(n)]
+print(div_svn)
+
+
+print("Lambda with sorted(), map() and filter()")
+
+
+
+# 27. Use lambda with sorted() to sort a list of tuples based on the second element.
+lst=[(1,10),(2,20),(3,30),(4,40)]
+srt_lst=sorted(lst,key=lambda tpl:tpl[1])
+print(srt_lst)
+
+
+# l28. Use lambda with sorted() to sort student records based on their marks in ascending order.
+lst=[("std1",34),("std2",89),("std3",92),("std4",54)]
+srt_std=sorted(lst,key=lambda std:std[1])
+print(srt_std)
+
+
+
+# l29. Use lambda with map() to add 10 to every number in a list.
+num=[5,12,20,35,40]
+nw_num=list(map(lambda x:x+10,num))
+print(nw_num)
+
+
+# l30. Use lambda with filter() to extract employees whose salaries are greater than n30,000
+emp=[{'name':'abc','sal':25000},
+     {'name':'bcd','sal':55000},
+     {'name':'cde','sal':20000},
+     {'name':'def','sal':35000},
+     {'name':'efg','sal':27000},
+     {'name':'fgh','sal':38000}]
+hgh_sal=list(filter(lambda e:e['sal']>30000,emp))
+print(hgh_sal)
